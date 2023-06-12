@@ -74,7 +74,7 @@ export default {
 
           <router-link to="/" class="logo">
             <img
-              :src="require('@/assets/images/demos/demo-4/logo.png')"
+              src="assets/images/demos/demo-4/logo.png"
               alt="Molla Logo"
               width="105"
               height="25"
@@ -209,7 +209,7 @@ export default {
                   <figure class="product-image-container">
                     <a href="product.html" class="product-image">
                       <img
-                      :src="require('@assets/images/products/cart/product-1.jpg')"
+                        src="assets/images/products/cart/product-1.jpg"
                         alt="product"
                       />
                     </a>
@@ -238,7 +238,7 @@ export default {
                   <figure class="product-image-container">
                     <a href="product.html" class="product-image">
                       <img
-                        :src="require('@/assets/images/products/cart/product-2.jpg')"
+                        src="assets/images/products/cart/product-2.jpg"
                         alt="product"
                       />
                     </a>
