@@ -74,7 +74,7 @@ export default {
 
           <router-link to="/" class="logo">
             <img
-              src="assets/images/demos/demo-4/logo.png"
+              :src="require('@/assets/images/demos/demo-4/logo.png')"
               alt="Molla Logo"
               width="105"
               height="25"
