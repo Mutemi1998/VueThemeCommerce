@@ -209,7 +209,7 @@ export default {
                   <figure class="product-image-container">
                     <a href="product.html" class="product-image">
                       <img
-                        src="assets/images/products/cart/product-1.jpg"
+                        :src="assets/images/products/cart/product-1.jpg"
                         alt="product"
                       />
                     </a>
