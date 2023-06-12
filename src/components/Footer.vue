@@ -52,7 +52,7 @@
           <div class="col-sm-6 col-lg-3">
             <div class="widget widget-about">
               <img
-                src="assets/images/demos/demo-4/logo-footer.png"
+               :src="require('assets/images/demos/demo-4/logo-footer.png')"
                 class="footer-logo"
                 alt="Footer Logo"
                 width="105"
