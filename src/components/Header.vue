@@ -238,7 +238,7 @@ export default {
                   <figure class="product-image-container">
                     <a href="product.html" class="product-image">
                       <img
-                        src="assets/images/products/cart/product-2.jpg"
+                        :src="require('@/assets/images/products/cart/product-2.jpg')"
                         alt="product"
                       />
                     </a>
