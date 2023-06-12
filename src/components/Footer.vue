@@ -52,7 +52,7 @@
           <div class="col-sm-6 col-lg-3">
             <div class="widget widget-about">
               <img
-               :src="require('assets/images/demos/demo-4/logo-footer.png')"
+                src="@/assets/images/demos/demo-4/logo-footer.png"
                 class="footer-logo"
                 alt="Footer Logo"
                 width="105"
@@ -143,7 +143,7 @@
         <!-- End .footer-copyright -->
         <figure class="footer-payments">
           <img
-            :src="require('@/assets/images/payments.png')"
+            src="@/assets/images/payments.png"
             alt="Payment methods"
             width="272"
             height="20"

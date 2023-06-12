@@ -12,6 +12,7 @@ import Faq from './components/Pages/Faq/faq.vue';
 import NotFound from './components/Pages/NotFound/404.vue';
 import Wishlist from './components/Pages/Wishlist/wishlist.vue';
 import Profile from  './components/Pages/Account/dashboard.vue';
+import api from './api.vue'
 
 
 const router = createRouter({
@@ -25,7 +26,7 @@ const router = createRouter({
     {
       path: "/product",
       name: "Product",
-      component: Product,
+      component: api,
     },
     {
       path: "/category",

@@ -45,8 +45,7 @@
                   <figure class="product-main-image">
                     <img
                       id="product-zoom"
-                      :src="require('@/assets/images/products/single/1.jpg')"
-
+                      src="/assets/images/products/single/1.jpg"
                       data-zoom-image="assets/images/products/single/1-big.jpg"
                       alt="product image"
                     />
@@ -69,8 +68,7 @@
                       data-zoom-image="assets/images/products/single/1-big.jpg"
                     >
                       <img
-                        :src="require('@/assets/images/products/single/1-small.jpg')"
-
+                        src="assets/images/products/single/3-small.jpg"
                         alt="product side"
                       />
                     </a>
@@ -82,8 +80,7 @@
                       data-zoom-image="assets/images/products/single/2-big.jpg"
                     >
                       <img
-                        :src="require('@/assets/images/products/single/2-small.jpg')"
-
+                        src="assets/images/products/single/3-small.jpg"
                         alt="product cross"
                       />
                     </a>
@@ -95,8 +92,7 @@
                       data-zoom-image="assets/images/products/single/3-big.jpg"
                     >
                       <img
-                        :src="require('@/assets/images/products/single/3-small.jpg')"
-
+                        src="assets/images/products/single/3-small.jpg"
                         alt="product with model"
                       />
                     </a>
@@ -108,7 +104,7 @@
                       data-zoom-image="assets/images/products/single/4-big.jpg"
                     >
                       <img
-                        :src="require('@/assets/images/products/single/4-small.jpg')"
+                        src="assets/images/products/single/3-small.jpg"
                         alt="product back"
                       />
                     </a>
