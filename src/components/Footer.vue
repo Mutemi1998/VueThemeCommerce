@@ -143,7 +143,7 @@
         <!-- End .footer-copyright -->
         <figure class="footer-payments">
           <img
-            src="assets/images/payments.png"
+            :src="require('@/assets/images/payments.png')"
             alt="Payment methods"
             width="272"
             height="20"
