@@ -1,33 +1,55 @@
-<template>
-  <div>
-    <!-- Add your HTML template code here -->
-  </div>
-</template>
 
 <script>
+
 import axios from 'axios';
 
-export default {
-  data() {
-    return {
-      posts: [],
-    };
-  },
+// const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://fakestoreapi.com';
 
-  created() {
-    this.getData();
-  },
+const apiService = axios.create({
+  baseURL: API_BASE_URL,
+});
 
-  methods: {
-    async getData() {
-      try {
-        const response = await axios.get('http://127.0.0.1:8080/api/products/1');
-        this.posts = response.data;
-        console.log(this.posts); // Display the data in the console
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
+const getProduct = async (productId) => {
+  try {
+    const response = await apiService.get(`/products/${productId}`);
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
 };
+
+const getAllProducts = async () => {
+  try {
+    const response = await apiService.get('/products');
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const getCategories = async () => {
+  try {
+    const response = await apiService.get('/categories');
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+const getCart = async () => {
+  try {
+    const response = await apiService.get('/cart');
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    throw error;
+  }
+};
+
+export { getProduct, getAllProducts, getCategories, getCart };
+
 </script>
