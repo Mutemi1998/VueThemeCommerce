@@ -55,57 +55,6 @@
                     </a>
                   </figure>
                   <!-- End .product-main-image -->
-
-                  <!-- <div id="product-zoom-gallery" class="product-image-gallery">
-                    <a
-                      class="product-gallery-item active"
-                      href="#"
-                      data-image="assets/images/products/single/1.jpg"
-                      data-zoom-image="assets/images/products/single/1-big.jpg"
-                    >
-                      <img
-                        src="assets/images/products/single/3-small.jpg"
-                        alt="product side"
-                      />
-                    </a>
-
-                    <a
-                      class="product-gallery-item"
-                      href="#"
-                      data-image="assets/images/products/single/2.jpg"
-                      data-zoom-image="assets/images/products/single/2-big.jpg"
-                    >
-                      <img
-                        src="assets/images/products/single/3-small.jpg"
-                        alt="product cross"
-                      />
-                    </a>
-
-                    <a
-                      class="product-gallery-item"
-                      href="#"
-                      data-image="assets/images/products/single/3.jpg"
-                      data-zoom-image="assets/images/products/single/3-big.jpg"
-                    >
-                      <img
-                        src="assets/images/products/single/3-small.jpg"
-                        alt="product with model"
-                      />
-                    </a>
-
-                    <a
-                      class="product-gallery-item"
-                      href="#"
-                      data-image="assets/images/products/single/4.jpg"
-                      data-zoom-image="assets/images/products/single/4-big.jpg"
-                    >
-                      <img
-                        src="assets/images/products/single/3-small.jpg"
-                        alt="product back"
-                      />
-                    </a>
-                  </div> -->
-                  <!-- End .product-image-gallery -->
                 </div>
                 <!-- End .row -->
               </div>
@@ -140,47 +89,9 @@
                     <p>{{ product ? product.description : 'Loading...' }}</p>
                 </div>
                 <!-- End .product-content -->
-
-                <div class="details-filter-row details-row-size">
-                  <label>Color:</label>
-
-                  <div class="product-nav product-nav-thumbs">
-                    <a href="#" class="active">
-                      <img
-                        src="assets/images/products/single/1-thumb.jpg"
-                        alt="product desc"
-                      />
-                    </a>
-                    <a href="#">
-                      <img
-                        src="assets/images/products/single/2-thumb.jpg"
-                        alt="product desc"
-                      />
-                    </a>
-                  </div>
-                  <!-- End .product-nav -->
-                </div>
                 <!-- End .details-filter-row -->
 
-                <div class="details-filter-row details-row-size">
-                  <label for="size">Size:</label>
-                  <div class="select-custom">
-                    <select name="size" id="size" class="form-control">
-                      <option value="#" selected="selected">
-                        Select a size
-                      </option>
-                      <option value="s">Small</option>
-                      <option value="m">Medium</option>
-                      <option value="l">Large</option>
-                      <option value="xl">Extra Large</option>
-                    </select>
-                  </div>
-                  <!-- End .select-custom -->
-
-                  <a href="#" class="size-guide"
-                    ><i class="icon-th-list"></i>size guide</a
-                  >
-                </div>
+               
                 <!-- End .details-filter-row -->
 
                 <div class="details-filter-row details-row-size">
@@ -884,9 +795,10 @@ export default {
   methods: {
     async fetchProduct() {
       try {
-        this.product = await getProduct(2); // Fetch product with ID 1
+        this.product = await getProduct(1); // Fetch product with ID 1
       } catch (error) {
         console.log(error);
+        throw error
       }
     },
   },
