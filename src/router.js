@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from './components/Main.vue';
 import Product from "./components/Pages/Product/product.vue";
-import Category from './components/Pages/Category/category-2cols.vue';
+import Category from "./components/Pages/Category/Category.vue";
 import About from './components/Pages/About/about-2.vue';
 import Login from './components/Pages/Account/login.vue';
-import Blog from './components/Pages/Blog/blog.vue';
+import Blog from "./components/Pages/Blog/blog.vue";
 import Cart from './components/Pages/Cart/cart.vue';
-import Checkout from './components/Pages/Checkout/checkout.vue';
+import Checkout from "./components/Pages/Checkout/checkout.vue";
 import Contact from './components/Pages/Contact/contact.vue';
 import Faq from './components/Pages/Faq/faq.vue';
 import NotFound from './components/Pages/NotFound/404.vue';

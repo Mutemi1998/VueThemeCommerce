@@ -781,7 +781,7 @@
 </template>
 
 <script>
-import { getProduct } from '@/api.vue';
+import { getProduct } from "@/api.vue";
 
 export default {
   data() {

@@ -1,9 +1,7 @@
-
 <script>
+import axios from "axios";
 
-import axios from 'axios';
-
-// const API_BASE_URL = 'http://localhost:8080/api';
+//const API_BASE_URL = "http://localhost:8000";
 const API_BASE_URL = 'https://fakestoreapi.com';
 
 const apiService = axios.create({
@@ -22,7 +20,7 @@ const getProduct = async (productId) => {
 
 const getAllProducts = async () => {
   try {
-    const response = await apiService.get('/products');
+    const response = await apiService.get("/products");
     return response.data;
   } catch (error) {
     console.log(error);
@@ -32,7 +30,7 @@ const getAllProducts = async () => {
 
 const getCategories = async () => {
   try {
-    const response = await apiService.get('/categories');
+    const response = await apiService.get("/categories");
     return response.data;
   } catch (error) {
     console.log(error);
@@ -42,7 +40,7 @@ const getCategories = async () => {
 
 const getCart = async () => {
   try {
-    const response = await apiService.get('/cart');
+    const response = await apiService.get("/carts");
     return response.data;
   } catch (error) {
     console.log(error);
@@ -51,5 +49,4 @@ const getCart = async () => {
 };
 
 export { getProduct, getAllProducts, getCategories, getCart };
-
 </script>
